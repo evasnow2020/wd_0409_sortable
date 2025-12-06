@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <style>
+      ul {
+        list-style: none;
+      }
+      ul li {
+        border: 1px solid #000;
+        width: 500px;
+        height: 30px;
+      }
+      ul .ui-selecting {
+        background-color: yellow;
+      }
+      ul .ui-selected {
+        background-color: red;
+      }
+    </style>
+    <script>
+      var x = $(document);
+      x.ready(iniciar);
+      function iniciar() {
+        x = $("ul");
+        x.sortable();
+      }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Manzana</li>
+      <li>Naranja</li>
+      <li>Platano</li>
+      <li>Pera</li>
+      <li>Sandia</li>
+    </ul>
+  </body>
+</html>
